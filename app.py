@@ -1,13 +1,11 @@
 import streamlit as st
 
 with st.chat_message("user"):
-    st.write("Hello, world!")
+    st.write("Hello World!")
 
-with st.chat_message("assistant"):
-    st.write("Hello, Abhirupa!")
+with st.chat_message("assisstant"):
+    st.write("Hello Abhirupa!")
 
-if prompt := st.chat_input("Let's Talk!"):
+if prompt := st.chat_input("Let's chat!"):
     with st.chat_message("user"):
-        st.markdown(prompt)
-    #Maintaining a Chat History
-    st.session_stte.messages.append({"role": "user", "content": prompt})
+        st.write("Hi! Let's talk!")
